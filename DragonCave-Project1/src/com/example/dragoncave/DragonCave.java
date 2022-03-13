@@ -1,5 +1,6 @@
 package com.example.dragoncave;
 
+
 import java.util.Scanner;
 public class DragonCave {
 
