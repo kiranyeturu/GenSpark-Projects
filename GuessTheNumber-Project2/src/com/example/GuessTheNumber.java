@@ -4,7 +4,7 @@ package com.example;
 import java.util.Scanner;
 
 public class GuessTheNumber {
-
+public static int number;
     // Function that implements the
     // number guessing game
     public static void
@@ -14,7 +14,7 @@ public class GuessTheNumber {
         Scanner sc = new Scanner(System.in);
 
         // Generate the numbers
-        int number = 1 + (int)(20
+        number = 1 + (int)(20
                 * Math.random());
 
         // Given K trials
