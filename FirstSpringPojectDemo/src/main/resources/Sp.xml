@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+
+    <bean id="student" class="Student.java">
+        <property name="name" value="name"/>
+        <property name="id" value="12345"/>
+        <property name="address" ref="address"/>
+        <property name="phone" ref="phone"/>
+    </bean>
+
+
+    <bean id="phone" class="Phone">
+        <property name="mobile" value="9985345612"/>
+    </bean>
+
+    <bean id="address" class="Address">
+        <property name="city" value="Annapolis"/>
+        <property name="zip" value="21041"/>
+        <property name="country" value="USA"/>
+        <property name="state" value="MD"/>
+    </bean>
+
+</beans>
